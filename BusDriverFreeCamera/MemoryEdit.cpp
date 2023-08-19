@@ -104,7 +104,7 @@ void MemoryEdit::fixCameraLink()
 {
 	WriteProcessMemory(hProcess, (void*)0x4DAC2E, "\x89\x53\x20", 3, NULL);
 	WriteProcessMemory(hProcess, (void*)0x4DAC31, "\x89\x43\x24", 3, NULL);
-	WriteProcessMemory(hProcess, (void*)0x4DAC44, "\x89\x4B\x2B", 3, NULL);
+	WriteProcessMemory(hProcess, (void*)0x4DAC44, "\x89\x4B\x28", 3, NULL);
 
 	WriteProcessMemory(hProcess, (void*)0x4DAC71, "\xD9\x5B\x2C", 3, NULL);
 	WriteProcessMemory(hProcess, (void*)0x4DAC7A, "\xD9\x5B\x30", 3, NULL);
